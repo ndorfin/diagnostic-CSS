@@ -1,16 +1,6 @@
 # Diagnostic CSS
 
-A collection of CSS declarations that can help highlight common mistakes in HTML
-
-The mechanism to show these warnings and their suggestions is WIP, but one could use something like the following:
-
-```css
-::after {
-  /*…*/
-  content: var(--hint);
-  /*…*/
-}
-```
+A collection of CSS declarations that can help highlight common mistakes in HTML.
 
 Here's [a working prototype on CodePen](https://codepen.io/ndorfin/pen/PojQygg?editors=1100).
 
@@ -46,9 +36,9 @@ body > :not(:is(
   h1, h2, h3, h4, h5, h6, p,
   ul, ol, dl,
   div,
-  header, footer, article, aside, section, main,
+  header, footer, article, aside, section, main, nav,
   table,
-  figure, picture, video, audio, img, canvas
+  figure, picture, video, audio, img
 )) {
   --type: 'validation';
   --level: 'error';
