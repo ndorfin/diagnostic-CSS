@@ -43,14 +43,15 @@ Here's [a working prototype on CodePen](https://codepen.io/ndorfin/pen/PojQygg?e
 }
 
 body > :not(:is(
-	h1, h2, h3, h4, h5, h6, p,
-	ul, ol, dl,
-	div,
-	header, footer, article, aside, section, main,
-	table,
-	figure, picture, video, audio, img, canvas
+  h1, h2, h3, h4, h5, h6, p,
+  ul, ol, dl,
+  div,
+  header, footer, article, aside, section, main,
+  table,
+  figure, picture, video, audio, img, canvas
 )) {
-	--type: 'validation';
+  --type: 'validation';
+  --level: 'error';
   --hint: 'Child elements of the `<body>` must be block-level elements';
   --suggestion: 'Wrap this inline element in a block-level element';
 }
