@@ -38,7 +38,7 @@ body > :not(:is(
   div,
   header, footer, article, aside, section, main, nav,
   table,
-  figure, picture, video, audio, img
+  figure, picture, video, audio, img, canvas
 )) {
   --type: 'validation';
   --level: 'error';
